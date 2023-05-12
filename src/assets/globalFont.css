@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Cocogoose';
+  src: url("@/assets/cocogoose.ttf") format('truetype');
+}
+
+.custom-font {
+  font-family: 'Cocogoose', sans-serif;
+}

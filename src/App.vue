@@ -1,26 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <router-view/>
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+ul,li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* Áp dụng khi chiều rộng màn hình nhỏ hơn hoặc bằng 768px (mobile) */
+@media (max-width: 768px) {
+  .element {
+    font-size: 14px;
+    padding: 10px;
+    /* Các điều chỉnh khác tùy ý */
+  }
+}
+
+/* Áp dụng khi chiều rộng màn hình lớn hơn 768px (desktop) */
+@media (min-width: 769px) {
+  .element {
+    font-size: 16px;
+    padding: 20px;
+    /* Các điều chỉnh khác tùy ý */
+  }
 }
 </style>

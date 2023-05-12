@@ -7,6 +7,9 @@ dependencies:
   vue:
     specifier: ^3.2.13
     version: 3.2.13
+  vue-router:
+    specifier: ^4.0.3
+    version: 4.0.3(vue@3.2.13)
 
 devDependencies:
   '@babel/core':
@@ -21,6 +24,9 @@ devDependencies:
   '@vue/cli-plugin-eslint':
     specifier: ~5.0.0
     version: 5.0.0(@vue/cli-service@5.0.1)(eslint@7.32.0)
+  '@vue/cli-plugin-router':
+    specifier: ~5.0.0
+    version: 5.0.8(@vue/cli-service@5.0.1)
   '@vue/cli-service':
     specifier: ~5.0.0
     version: 5.0.1(@babel/core@7.21.8)(vue@3.2.13)
@@ -6593,6 +6599,14 @@ packages:
       watchpack: 2.4.0
       webpack: 5.82.1
     dev: true
+
+  /vue-router@4.0.3(vue@3.2.13):
+    resolution: {integrity: sha512-AD1OjtVPyQHTSpoRsEGfPpxRQwhAhxcacOYO3zJ3KNkYP/r09mileSp6kdMQKhZWP2cFsPR3E2M3PZguSN5/ww==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.2.13
+    dev: false
 
   /vue-style-loader@4.1.3:
     resolution: {integrity: sha512-sFuh0xfbtpRlKfm39ss/ikqs9AbKCoXZBpHeVZ8Tx650o0k0q/YCM7FRvigtxpACezfq6af+a7JeqVTWvncqDg==}
