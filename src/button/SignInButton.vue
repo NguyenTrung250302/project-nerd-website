@@ -1,7 +1,5 @@
 <template>
-  <div class="button-white">
     <button class="btn-login">Sign In</button>
-  </div>
 </template>
 
 <script>

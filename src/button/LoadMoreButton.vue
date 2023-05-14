@@ -1,6 +1,6 @@
 <template>
-  <button class="btn-subscribe">
-    <font-text-inter btnSubscribe="SUBSCRIBE" />
+  <button class="btn-load-more">
+    <font-text-inter btnLoadMore="LOAD MORE" />
   </button>
 </template>
 
@@ -12,21 +12,21 @@ export default {
 </script>
 
 <style scoped>
-.btn-subscribe {
-  width: 250px;
-  height: 56px;
+.btn-load-more {
+  width: 945px;
+  height: 80px;
   display: flex;
+  border: none;
   justify-content: center;
   align-items: center;
-  padding: 16px 24px;
-  background: #ffffff;
-  border-radius: 8px;
-  border: none;
+  padding: 18px 26px;
+  background: #000000;
   box-shadow: 0px 2px 5px rgba(103, 110, 118, 0.08),
     0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 1px 1px rgba(0, 0, 0, 0.12);
-  margin: 40px auto;
+  border-radius: 16px;
+    margin: 30px auto;
 }
-.btn-subscribe:hover {
+button:hover {
   cursor: pointer;
 }
 </style>

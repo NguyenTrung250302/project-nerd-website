@@ -15,11 +15,10 @@ export default {
 <style scoped>
 @import url("@/assets/globalFont.css");
 .font-text-navigation {
-  font-weight: 500;
   color: #3E3E5F;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: 'Cocogoose', sans-serif;
 }
 </style>
