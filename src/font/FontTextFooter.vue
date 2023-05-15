@@ -50,7 +50,7 @@ export default {
 .endTap {
   font-family: "Mulish", sans-serif;
   font-weight: 600;
-  font-size: 14.5px;
+  font-size: 14px;
   color: #818196;
 }
 </style>

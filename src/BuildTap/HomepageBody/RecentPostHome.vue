@@ -1,21 +1,118 @@
 <template>
   <div class="container-recent-post">
-    <font-text-navigation-bar TextNavigation="Recent Post" class="left"/>
+    <font-text-cocogoose titleItem="Recent Post" />
     <div class="recent-post">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
+      <!-- box 1 -->
+      <div class="item">
+        <!-- item -->
+        <div class="item-above">
+          <fundamental-item />
+          <education-item />
+          <premium-item />
+        </div>
+        <!-- content -->
+        <div class="item-below">
+          <font-text-mulish NameDesigner="by Thanh Tung" />
+          <font-text-raleway ContentItemHomePage="The Bridge Series: A" />
+          <font-text-raleway ContentItemHomePage="Travel Through" />
+          <font-text-raleway ContentItemHomePage="Wormhole" />
+        </div>
+      </div>
+      <!-- box 2 -->
+      <div class="item">
+        <!-- item -->
+        <div class="item-above">
+          <fundamental-item />
+          <education-item />
+          <premium-item />
+        </div>
+        <!-- content -->
+        <div class="item-below">
+          <font-text-mulish NameDesigner="by Thanh Tung" />
+          <font-text-raleway ContentItemHomePage="SVB, USDC depeg," />
+          <font-text-raleway ContentItemHomePage=" hệ quả của QT và bài học" />
+          <font-text-raleway ContentItemHomePage="về Convexity" />
+        </div>
+      </div>
+      <!-- box 3 -->
+      <div class="item">
+        <!-- item -->
+        <div class="item-above">
+          <fundamental-item />
+          <education-item />
+          <premium-item />
+        </div>
+        <!-- content -->
+        <div class="item-below">
+          <font-text-mulish NameDesigner="by Thanh Tung" />
+          <font-text-raleway ContentItemHomePage="Arbitrum DAO and $ARB:" />
+          <font-text-raleway ContentItemHomePage="đu giá đúng!" />
+        </div>
+      </div>
+      <!-- box 4 -->
+      <div class="item">
+        <!-- item -->
+        <div class="item-above">
+          <fundamental-item />
+          <education-item />
+          <premium-item />
+        </div>
+        <!-- content -->
+        <div class="item-below">
+          <font-text-mulish NameDesigner="by Thanh Tung" />
+          <font-text-raleway
+            ContentItemHomePage="MEV Part 1 : Những điều "/>
+          <font-text-raleway ContentItemHomePage="cần biết" />
+        </div>
+      </div>
+      <!-- box 5 -->
+      <div class="item">
+        <!-- item -->
+        <div class="item-above">
+          <fundamental-item />
+          <education-item />
+          <premium-item />
+        </div>
+        <!-- content -->
+        <div class="item-below">
+          <font-text-mulish NameDesigner="by Thanh Tung" />
+          <font-text-raleway ContentItemHomePage="Weekly Report #3" />
+        </div>
+      </div>
+      <!-- box 6 -->
+      <div class="item">
+        <!-- item -->
+        <div class="item-above">
+          <fundamental-item />
+          <education-item />
+          <premium-item />
+        </div>
+        <!-- content -->
+        <div class="item-below">
+          <font-text-mulish NameDesigner="by Thanh Tung" />
+          <font-text-raleway ContentItemHomePage="Weekly Report #3" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import FontTextNavigationBar from "@/font/FontTextNavigationBar.vue";
+import FontTextCocogoose from "@/font/FontTextCocogoose.vue";
+import FontTextRaleway from "@/font/FontTextRaleway.vue";
+import FontTextMulish from "@/font/FontTextMulish.vue";
+import PremiumItem from './Item/PremiumItem.vue';
+import FundamentalItem from './Item/FundamentalItem.vue';
+import EducationItem from './Item/EducationItem.vue';
 export default {
-  components: { FontTextNavigationBar },
+  components: {
+    FontTextCocogoose,
+    FontTextRaleway,
+    FontTextMulish,
+    PremiumItem,
+    FundamentalItem,
+    EducationItem,
+  },
 };
 </script>
 
@@ -37,10 +134,16 @@ export default {
 }
 .item {
   border-radius: 16px;
-  background-color: aquamarine;
+  background-color: cadetblue;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.item-above {
+  display: flex;
+}
+.item-below {
+  /*  */
 }
 </style>

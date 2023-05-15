@@ -1,37 +1,158 @@
 <template>
   <div class="container-featured">
-    <font-text-navigation-bar TextNavigation="Featured" class="left"/>
+    <font-text-cocogoose titleItem="Featured" />
     <div class="pinned-wrap">
+      <!-- row 1 -->
       <div class="row">
-        <div class="pinned-item img1"></div>
-        <div class="pinned-item">
-          <div class="pinned-item-small"></div>
-          <div class="pinned-item-small"></div>
+        <!-- box 1 -->
+        <div class="pinned-item img1">
+          <!-- item -->
+          <div class="form-item-above">
+            <pinned-item />
+            <premium-item />
+          </div>
+          <!-- content -->
+          <div class="form-item-below">
+            <font-text-mulish NameDesigner="by Thanh Tung" />
+            <font-text-raleway ContentItemHomePage="The Bridge Series: A" />
+            <font-text-raleway ContentItemHomePage="Travel Through" />
+            <font-text-raleway ContentItemHomePage="Wormhole" />
+          </div>
         </div>
+        <!-- box 2 -->
         <div class="pinned-item">
-          <div class="pinned-item-small"></div>
-          <div class="pinned-item-small"></div>
+          <div class="pinned-item-small">
+            <!-- item -->
+            <div class="form-item-above">
+              <pinned-item />
+              <premium-item />
+            </div>
+            <!-- content -->
+            <div class="form-item-below">
+              <font-text-mulish NameDesigner="by Tran Thuan" />
+              <font-text-raleway
+                ContentItemSmall="The Bridge Series: The Designs"
+              />
+            </div>
+          </div>
+          <!-- box 3 -->
+          <div class="pinned-item-small">
+            <!-- item -->
+            <div class="form-item-above">
+              <pinned-item />
+              <premium-item />
+            </div>
+            <!-- content -->
+            <div class="form-item-below">
+              <font-text-mulish NameDesigner="by yy.#0101" />
+              <font-text-raleway
+                ContentItemSmall="Arbitrum DAO and $ARB: Hãy đu giá đúng!"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- box 4 -->
+        <div class="pinned-item">
+          <div class="pinned-item-small">
+            <!-- item -->
+            <div class="form-item-above">
+              <pinned-item />
+              <premium-item />
+            </div>
+            <!-- content -->
+            <div class="form-item-below">
+              <font-text-mulish NameDesigner="by Thanh Tung" />
+              <font-text-raleway ContentItemSmall="In B(ank)TC We Trust" />
+            </div>
+          </div>
+          <!-- box 5 -->
+          <div class="pinned-item-small">
+            <!-- item -->
+            <div class="form-item-above">
+              <pinned-item />
+              <premium-item />
+            </div>
+            <!-- content -->
+            <div class="form-item-below">
+              <font-text-mulish NameDesigner="by Tran Thuan" />
+              <font-text-raleway
+                ContentItemSmall="Transaction Order Flows & MEV"
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <!--  -->
+      <!-- row 2 -->
       <div class="row">
-        <div class="pinned-item-small"></div>
-        <div class="pinned-item-small"></div>
-        <div class="pinned-item-small"></div>
+        <!-- box 6 -->
+        <div class="pinned-item-small">
+          <!-- item -->
+          <div class="form-item-above">
+            <pinned-item />
+            <premium-item />
+          </div>
+          <!-- content -->
+          <div class="form-item-below">
+            <font-text-mulish NameDesigner="by yy.#0101" />
+            <font-text-raleway
+              ContentItemSmall="SVB, USDC depeg, hệ quả của QT và bài học về Convexity"
+            />
+          </div>
+        </div>
+        <!-- box 7 -->
+        <div class="pinned-item-small">
+          <!-- item -->
+          <div class="form-item-above">
+            <pinned-item />
+            <premium-item />
+          </div>
+          <!-- content -->
+          <div class="form-item-below">
+            <font-text-mulish NameDesigner="by Thanh Tung" />
+            <font-text-raleway
+              ContentItemSmall="InfinityPools: Leverage to infinity and beyond"
+            />
+          </div>
+        </div>
+        <!-- box 8 -->
+        <div class="pinned-item-small">
+          <!-- item -->
+          <div class="form-item-above">
+            <pinned-item />
+            <premium-item />
+          </div>
+          <!-- content -->
+          <div class="form-item-below">
+            <font-text-mulish NameDesigner="by Tran Thuan" />
+            <font-text-raleway
+              ContentItemSmall="MEV Part 1 : Những điều cần biết"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import FontTextNavigationBar from "@/font/FontTextNavigationBar.vue";
+import PinnedItem from "./Item/PinnedItem.vue";
+import PremiumItem from "./Item/PremiumItem.vue";
+import FontTextCocogoose from "@/font/FontTextCocogoose.vue";
+import FontTextMulish from "@/font/FontTextMulish.vue";
+import FontTextRaleway from "@/font/FontTextRaleway.vue";
 export default {
-  components: { FontTextNavigationBar },
+  components: {
+    PinnedItem,
+    PremiumItem,
+    FontTextCocogoose,
+    FontTextMulish,
+    FontTextRaleway,
+  },
 };
 </script>
 
 <style scoped>
-.container-featured {
+.contain {
   margin-top: 60px;
 }
 .left {
@@ -54,18 +175,27 @@ export default {
   width: 425px;
   height: 415px;
   border-radius: 16px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .pinned-item-small {
   width: 425px;
   height: 200px;
   border-radius: 16px;
   background-color: rgb(186, 189, 187);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form-item-above {
+  display: flex;
+  padding: 20px 20px;
+}
+.form-item-below {
+  padding: 20px 20px;
 }
 .img1 {
-  background-image: url("@/assets/img/amen.png");
-  background-size: cover;
+  background-color: cadetblue;
 }
 </style>
