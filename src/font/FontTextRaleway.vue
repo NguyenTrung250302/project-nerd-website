@@ -1,7 +1,8 @@
 <template>
-  <p class="content-item">{{ ContentItemHomePage }}</p>
+  <p id="content-item">{{ ContentItemHomePage }}</p>
   <!--  -->
-  <p class="small-content">{{ ContentItemSmall }}</p>
+  <p id="small-content">{{ ContentItemSmall }}</p>
+  <p id="coming-soon">{{ contentComingSoon }}</p>
 </template>
 
 <script>
@@ -15,12 +16,16 @@ export default {
       type: String,
       requited: true,
     },
+    contentComingSoon: {
+      type: String,
+      requited: true,
+    },
   },
 };
 </script>
 
 <style scoped>
-.content-item {
+#content-item {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -30,8 +35,8 @@ export default {
   color: #ffffff;
   margin: 5px 0;
 }
-.small-content {
-  font-family: "Raleway",sans-serif;
+#small-content {
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 19px;
@@ -41,5 +46,17 @@ export default {
   color: #ffffff;
   margin: 5px 0;
   padding: 0 0;
+}
+#coming-soon {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #3e3e5f;
+  margin: 0;
 }
 </style>

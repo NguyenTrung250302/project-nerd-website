@@ -1,7 +1,8 @@
 <template>
-  <p class="font-text">{{ TextContactButton }}</p>
+  <p id="font-text">{{ TextContactButton }}</p>
   <p id="name-designer">{{ NameDesigner }}</p>
   <p id="fundamental-item">{{ FundamentalItem }}</p>
+  <p id="coming-content">{{ contentComingSoon1 }}</p>
 </template>
 
 <script>
@@ -19,12 +20,16 @@ export default {
       type: String,
       requited: true,
     },
+    contentComingSoon1: {
+      type: String,
+      requited: true,
+    },
   },
 };
 </script>
 
 <style scoped>
-.font-text {
+#font-text {
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
@@ -54,5 +59,17 @@ export default {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
+}
+#coming-content {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgba(62, 62, 95, 0.655);
+  margin: 0;
+  padding: 0;
 }
 </style>
