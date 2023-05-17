@@ -35,7 +35,6 @@ export default {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #3e3e5f;
-  padding-left: 25px;
   margin-top: 50px;
 }
 #text-pinned {
@@ -47,7 +46,7 @@ export default {
   text-transform: uppercase;
   color: #3e3e5f;
   margin: 2px 0 0 -20px;
-  padding: 0;
+  padding-left: 25px;
 }
 #text-premium {
   font-family: "Cocogoose", sans-serif;
@@ -59,6 +58,6 @@ export default {
   text-transform: uppercase;
   color: #ffffff;
   margin: 2px 0 0 0;
-  padding: 0;
+  padding: 0 0;
 }
 </style>

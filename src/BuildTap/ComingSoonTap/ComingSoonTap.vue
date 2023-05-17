@@ -4,6 +4,9 @@
     <!-- body -->
     <div id="icon">
       <!-- icon -->
+      <div>
+        
+      </div>
       <icon-coming-soon />
       <!-- content -->
       <div id="content">

@@ -1,16 +1,14 @@
 <template>
-  <div class="button-black">
-    <button class="btn-contact">
-      <font-text-mulish TextContactButton="Connect Wallet" />
-    </button>
-  </div>
+  <button class="btn-contact">
+    <font-text-mulish TextContactButton="Connect Wallet" />
+  </button>
 </template>
 
 <script>
 import FontTextMulish from "@/font/FontTextMulish.vue";
 export default {
   components: {
-    FontTextMulish
+    FontTextMulish,
   },
 };
 </script>

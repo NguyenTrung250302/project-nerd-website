@@ -1,6 +1,9 @@
 <template>
   <div class="container-featured">
+    <div id="container-title">
     <font-text-cocogoose titleItem="Featured" />
+    <div id="a"></div>
+    </div>
     <div class="pinned-wrap">
       <!-- row 1 -->
       <div class="row">
@@ -19,9 +22,9 @@
             <font-text-raleway ContentItemHomePage="Wormhole" />
           </div>
         </div>
-        <!-- box 2 -->
         <div class="pinned-item">
-          <div class="pinned-item-small">
+          <!-- box 2 -->
+          <div class="pinned-item-small img2">
             <!-- item -->
             <div class="form-item-above">
               <pinned-item />
@@ -36,7 +39,7 @@
             </div>
           </div>
           <!-- box 3 -->
-          <div class="pinned-item-small">
+          <div class="pinned-item-small img3">
             <!-- item -->
             <div class="form-item-above">
               <pinned-item />
@@ -51,9 +54,9 @@
             </div>
           </div>
         </div>
-        <!-- box 4 -->
         <div class="pinned-item">
-          <div class="pinned-item-small">
+          <!-- box 4 -->
+          <div class="pinned-item-small img4">
             <!-- item -->
             <div class="form-item-above">
               <pinned-item />
@@ -66,7 +69,7 @@
             </div>
           </div>
           <!-- box 5 -->
-          <div class="pinned-item-small">
+          <div class="pinned-item-small img5">
             <!-- item -->
             <div class="form-item-above">
               <pinned-item />
@@ -85,7 +88,7 @@
       <!-- row 2 -->
       <div class="row">
         <!-- box 6 -->
-        <div class="pinned-item-small">
+        <div class="pinned-item-small img6">
           <!-- item -->
           <div class="form-item-above">
             <pinned-item />
@@ -100,7 +103,7 @@
           </div>
         </div>
         <!-- box 7 -->
-        <div class="pinned-item-small">
+        <div class="pinned-item-small img7">
           <!-- item -->
           <div class="form-item-above">
             <pinned-item />
@@ -115,7 +118,7 @@
           </div>
         </div>
         <!-- box 8 -->
-        <div class="pinned-item-small">
+        <div class="pinned-item-small img8">
           <!-- item -->
           <div class="form-item-above">
             <pinned-item />
@@ -152,7 +155,7 @@ export default {
 </script>
 
 <style scoped>
-.contain {
+.contain-featured {
   margin-top: 60px;
 }
 .left {
@@ -183,7 +186,7 @@ export default {
   width: 425px;
   height: 200px;
   border-radius: 16px;
-  background-color: rgb(186, 189, 187);
+  background-color: rgb(1,6,25);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -196,6 +199,55 @@ export default {
   padding: 20px 20px;
 }
 .img1 {
-  background-color: cadetblue;
+  background-image: url("@/assets/img/1.png");
+  background-size: cover;
+  background-position: center;
+}
+.img2 {
+  background-image: url("@/assets/img/2.png");
+  background-size: cover;
+  background-position: center;
+}
+.img3 {
+  background-image: url("@/assets/img/4.png");
+  background-size: cover;
+  background-position: center;
+}
+.img4 {
+  background-image: url("@/assets/img/3.png");
+  background-size: cover;
+  background-position: center;
+}
+.img5 {
+  background-image: url("@/assets/img/5.png");
+  background-size: cover;
+  background-position: center;
+}
+.img6 {
+  background-image: url("@/assets/img/6.png");
+  background-size: cover;
+  background-position: center;
+}
+.img7 {
+  background-image: url("@/assets/img/7.png");
+  background-size: cover;
+  background-position: center;
+}
+.img8 {
+  background-image: url("@/assets/img/11.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#container-title {
+  width: 1300px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#a {
+  width: 10px;
+  height: 20px;
 }
 </style>
