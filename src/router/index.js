@@ -5,6 +5,8 @@ import ComingSoonTap from "@/BuildTap/ComingSoonTap/ComingSoonTap.vue";
 import ContactUsTap from "@/BuildTap/ContactUsTap/ContactUsTap.vue";
 import ContactPartnerTap from "@/BuildTap/ContactUsTap/ContactPartnerTap.vue";
 import ContactAffiliateTap from "@/BuildTap/ContactUsTap/ContactAffiliateTap.vue";
+import ContactRegisterTap from "@/BuildTap/ContactUsTap/ContactRegisterTap";
+import ContactTeamsTap from "@/BuildTap/ContactUsTap/ContactTeamsTap.vue";
 const routes = [
   {
     path: "/",
@@ -17,20 +19,28 @@ const routes = [
     component: AboutView,
   },
   {
-    path: "/coming-soon",
+    path: "/comingSoon",
     component: ComingSoonTap,
   },
   {
-    path: "/contact-us",
+    path: "/contactUs",
     component: ContactUsTap,
   },
   {
-    path: "/become-partner",
+    path: "/partner",
     component: ContactPartnerTap,
   },
-    {
-    path: "/become-affiliate",
+  {
+    path: "/affiliate",
     component: ContactAffiliateTap,
+  },
+  {
+    path: "/register",
+    component: ContactRegisterTap,
+  },
+  {
+    path: "/teams",
+    component: ContactTeamsTap,
   },
 ];
 

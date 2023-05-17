@@ -1,5 +1,7 @@
 <template>
+  <!-- header -->
   <p id="font-text">{{ TextContactButton }}</p>
+  <!-- component featured -->
   <p id="name-designer">{{ NameDesigner }}</p>
   <p id="fundamental-item">{{ FundamentalItem }}</p>
   <!-- tap coming soon -->
@@ -9,6 +11,9 @@
   <p id="content-notes">{{ contentNotes }}</p>
   <!-- btn send now -->
   <p id="btn-send-now">{{ btnSendNow }}</p>
+  <!-- tap contact teams -->
+  <p id="title-logo-teams">{{ titleLogoTeams }}</p>
+  <p id="role-name">{{ roleName }}</p>
 </template>
 
 <script>
@@ -40,8 +45,16 @@ export default {
     },
     btnSendNow: {
       type: String,
-      requited: true
-    }
+      requited: true,
+    },
+    titleLogoTeams: {
+      type: String,
+      requited: true,
+    },
+    roleName: {
+      type: String,
+      required: true,
+    },
   },
 };
 </script>
@@ -108,13 +121,36 @@ export default {
   color: #6e757c;
   margin: 0;
 }
-#btn-send-now{
-  font-family: 'Mulish';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: -0.01em;
-color: #FCFDFE;
+#btn-send-now {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #fcfdfe;
+}
+#title-logo-teams {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #272e35;
+  text-align: center;
+}
+#role-name {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #272e35;
+  opacity: 0.75;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 160px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>

@@ -1,26 +1,23 @@
 <template>
-  <div class="container-contact">
+  <div id="container-register">
     <header-view />
     <!-- title -->
     <div id="title-contact">
-      <font-text-mulish titleContactUs="Contact Us" />
-      <font-text-mulish contentNotes="Questions, bug reports, feedback." />
+      <font-text-mulish titleContactUs="Course Register" />
+      <font-text-mulish contentNotes="Introduction to Python" />
     </div>
     <!-- body -->
-    <div id="contact-us">
+    <div id="contact-partner">
       <!-- left -->
       <div id="contact-modal">
         <div id="form-contact">
           <contact-email placeholderText="Email address"/>
           <contact-name placeholderText="Name"/>
-          <contact-company placeholderText="Company name"/>
-          <contact-choose-topic placeholderText="Choose Topic"/>
-          <contact-help placeholderContact="How can we help you ?"/> 
         </div>
         <send-now-button id="btn-send-now" />
       </div>
       <!-- right -->
-      <div id="background-contact">
+      <div id="background-register">
       </div>
     </div>
     <!--  -->
@@ -34,10 +31,7 @@ import FooterView from "@/components/FooterView.vue";
 import FontTextMulish from "@/font/FontTextMulish.vue";
 import SendNowButton from "@/button/SendNowButton.vue";
 import ContactEmail from "@/BuildTap/ContactUsTap/ContactItem/ContactEmail.vue";
-import ContactHelp from "@/BuildTap/ContactUsTap/ContactItem/ContactHelp.vue";
 import ContactName from "@/BuildTap/ContactUsTap/ContactItem/ContactName.vue";
-import ContactCompany from './ContactItem/ContactCompany.vue';
-import ContactChooseTopic from './ContactItem/ContactChooseTopic.vue';
 export default {
   components: {
     HeaderView,
@@ -45,23 +39,20 @@ export default {
     FontTextMulish,
     ContactEmail,
     SendNowButton,
-    ContactHelp,
     ContactName,
-    ContactCompany,
-    ContactChooseTopic
   },
 };
 </script>
 
 <style scoped>
-#container-contact {
+#container-partner {
   width: 100%;
   height: auto;
 }
 #title-contact {
   padding: 40px 160px;
 }
-#contact-us {
+#contact-partner {
   width: 1170px;
   height: auto;
   display: flex;
@@ -70,7 +61,7 @@ export default {
 }
 #contact-modal {
   width: 590px;
-  height: 530px;
+  height: 240px;
   box-shadow: 1px 32px 32px -20px #dedede;
   border-radius: 16px;
   padding: 40px 0;
@@ -83,10 +74,10 @@ export default {
 #btn-send-now {
   margin-left: 30px;
 }
-#background-contact {
+#background-register {
   width: 500px;
   height: 495px;
-  background-image: url("@/assets/Light/Contact Us.png");
+  background-image: url("@/assets/Light/Become a Partner.png");
   background-size: cover;
 }
 .custom-input::placeholder {
