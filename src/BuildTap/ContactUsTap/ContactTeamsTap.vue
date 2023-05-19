@@ -16,7 +16,7 @@
           <!-- member 1 -->
           <div id="member">
             <div id="avatar">
-              <img src="" alt="loading" />
+              <img src="@/assets/img/1.png" alt="loading" />
             </div>
             <div id="content">
               <font-text-inter memberName="Lexie Wolff" />
@@ -26,7 +26,7 @@
           <!-- member 2 -->
           <div id="member">
             <div id="avatar">
-              <img src="" alt="loading" />
+              <img src="@/assets/img/2.png" alt="loading" />
             </div>
             <div id="content">
               <font-text-inter memberName="Ida Flatley" />
@@ -36,7 +36,7 @@
           <!-- member 3 -->
           <div id="member">
             <div id="avatar">
-              <img src="" alt="loading" />
+              <img src="@/assets/img/3.png" alt="loading" />
             </div>
             <div id="content">
               <font-text-inter memberName="Britney Barrows" />
@@ -46,7 +46,7 @@
           <!-- member 4 -->
           <div id="member">
             <div id="avatar">
-              <img src="" alt="loading" />
+              <img src="@/assets/img/4.png" alt="loading" />
             </div>
             <div id="content">
               <font-text-inter memberName="Chelsey Corkery" />
@@ -56,7 +56,7 @@
           <!-- member 5 -->
           <div id="member">
             <div id="avatar">
-              <img src="" alt="loading" />
+              <img src="@/assets/img/5.png" alt="loading" />
             </div>
             <div id="content">
               <font-text-inter memberName="Chelsey Corkery" />
@@ -69,7 +69,7 @@
           <!-- member 6 -->
           <div id="member">
             <div id="avatar">
-              <img src="" alt="loading" />
+              <img src="@/assets/img/6.png" alt="loading" />
             </div>
             <div id="content">
               <font-text-inter memberName="Chelsey Corkery" />
@@ -79,7 +79,7 @@
           <!-- member 7 -->
           <div id="member">
             <div id="avatar">
-              <img src="" alt="loading" />
+              <img src="@/assets/img/7.png" alt="loading" />
             </div>
             <div id="content">
               <font-text-inter memberName="Britney Barrows" />
@@ -89,7 +89,7 @@
           <!-- member 8 -->
           <div id="member">
             <div id="avatar">
-              <img src="" alt="loading" />
+              <img src="@/assets/img/11.png" alt="loading" />
             </div>
             <div id="content">
               <font-text-inter memberName="Lexie Wolff" />
@@ -99,7 +99,7 @@
           <!-- member 9 -->
           <div id="member">
             <div id="avatar">
-              <img src="" alt="loading" />
+              <img src="@/assets/img/12.png" alt="loading" />
             </div>
             <div id="content">
               <font-text-inter memberName="Ida Flatley" />
@@ -109,7 +109,7 @@
           <!-- member 10 -->
           <div id="member">
             <div id="avatar">
-              <img src="" alt="loading" />
+              <img src="@/assets/img/10.png" alt="loading" />
             </div>
             <div id="content">
               <font-text-inter memberName="Ida Flatley" />

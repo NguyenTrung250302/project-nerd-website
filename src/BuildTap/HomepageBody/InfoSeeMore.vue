@@ -1,7 +1,5 @@
 <template>
   <div class="container-info">
-    <load-more-button />
-    <!--  -->
     <div class="text-info">
       <p class="text1">Subscribe to see what we're thinking</p>
       <p class="text2">Start your day of crypto with NERD</p>
@@ -16,10 +14,9 @@
 </template>
 
 <script>
-import LoadMoreButton from "@/button/LoadMoreButton.vue";
 import SubscribeButton from "@/button/SubscribeButton.vue";
 export default {
-  components: { LoadMoreButton, SubscribeButton },
+  components: { SubscribeButton },
 };
 </script>
 

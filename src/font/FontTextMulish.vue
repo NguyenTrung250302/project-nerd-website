@@ -1,6 +1,6 @@
 <template>
   <!-- header -->
-  <p id="font-text">{{ TextContactButton }}</p>
+  <p id="btn-contact">{{ TextContactButton }}</p>
   <!-- component featured -->
   <p id="name-designer">{{ NameDesigner }}</p>
   <p id="fundamental-item">{{ FundamentalItem }}</p>
@@ -14,6 +14,15 @@
   <!-- tap contact teams -->
   <p id="title-logo-teams">{{ titleLogoTeams }}</p>
   <p id="role-name">{{ roleName }}</p>
+  <!-- btn register -->
+  <p id="btn-register">{{ btnRegister }}</p>
+  <!-- introduction component -->
+  <p id="title-introduction">{{ titleIntroduction }}</p>
+  <p id="content-introduction">{{ ContentIntroduction }}</p>
+  <!-- course component -->
+  <p id="course-title">{{ courseTitle }}</p>
+  <p id="main-title-course">{{ mainTitleCourse }}</p>
+  <p id="content-courses-a">{{ contentCourses }}</p>
 </template>
 
 <script>
@@ -55,19 +64,44 @@ export default {
       type: String,
       required: true,
     },
+    btnRegister: {
+      type: String,
+      required: true,
+    },
+    titleIntroduction: {
+      type: String,
+      required: true,
+    },
+    ContentIntroduction: {
+      type: String,
+      required: true,
+    },
+    courseTitle: {
+      type: String,
+      required: true,
+    },
+    mainTitleCourse: {
+      type: String,
+      required: true,
+    },
+    contentCourses: {
+      type: String,
+      required: true,
+    },
   },
 };
 </script>
 
 <style scoped>
-#font-text {
+#btn-contact {
   color: #ffffff;
   font-size: 16px;
-  line-height: 20px;
   font-weight: 600;
   font-size: 14px;
   font-family: "mulish", sans-serif;
   font-weight: 600;
+  margin: 0;
+  padding: 0;
 }
 #name-designer {
   font-family: "Mulish", sans-serif;
@@ -77,7 +111,7 @@ export default {
   display: flex;
   align-items: center;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin: 0;
 }
 #fundamental-item {
   margin: 0 0;
@@ -152,5 +186,64 @@ export default {
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+#btn-register {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  color: #fcfdfe;
+  position: absolute;
+  margin: 0 auto;
+}
+#title-introduction {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  color: #272e35;
+  margin: 0;
+  padding: 0;
+}
+#content-introduction {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6e757c;
+}
+#course-title {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -1px;
+  color: #05192d;
+  margin: 0;
+  padding: 0;
+}
+#main-title-course {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  display: flex;
+  color: #05192d;
+  margin: 0;
+  padding: 0;
+}
+#content-courses-a {
+  font-family: "Mulish",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: #05192d;
+  margin: 0;
+  padding: 0;
 }
 </style>
