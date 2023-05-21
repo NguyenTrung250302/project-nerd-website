@@ -1,9 +1,9 @@
 <template>
   <div id="container-academy">
     <header-view />
-    <!-- introduction -->
-    <introduction-academy />
-    <!-- course -->
+    <!-- introduction detail -->
+    <introduction-academy-detail />
+    <!-- course detail -->
     <course-description />
     <!-- btn -->
     <div id="container-btn">
@@ -21,7 +21,7 @@ import HeaderView from "@/components/HeaderView.vue";
 import FooterView from "@/components/FooterView.vue";
 import InfoSeeMore from '../HomepageBody/InfoSeeMore.vue';
 import RegisterButton from '@/button/RegisterButton.vue';
-import IntroductionAcademy from './IntroductionAcademy.vue';
+import IntroductionAcademyDetail from './IntroductionAcademyDetail.vue';
 import CourseDescription from './CourseDescription.vue';
 export default {
   components: {
@@ -29,7 +29,7 @@ export default {
     FooterView,
     InfoSeeMore,
     RegisterButton,
-    IntroductionAcademy,
+    IntroductionAcademyDetail,
     CourseDescription,
   },
 };
@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 #container-btn {
-  width: 1115px;
+  width: 1100px;
   margin: 0 auto;
 }
 #distance {

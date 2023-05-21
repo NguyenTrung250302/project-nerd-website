@@ -53,7 +53,7 @@ export default {
 
 <style scoped>
 #container-introduction {
-  width: 1115px;
+  width: 1090px;
   height: 450px;
   margin: 100px auto 0 auto;
 }

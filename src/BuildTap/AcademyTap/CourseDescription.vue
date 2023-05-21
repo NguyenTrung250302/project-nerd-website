@@ -48,7 +48,7 @@
     </div>
     <!-- img -->
     <div id="background-img">
-      <icon-coming-soon />
+      <icon-coming-soon id="img"/>
     </div>
   </div>
 </template>
@@ -66,7 +66,7 @@ export default {
 
 <style scoped>
 #container-course-description {
-  width: 1115px;
+  width: 1090px;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -86,5 +86,9 @@ export default {
 }
 #courses {
   margin: 25px 0 0 0;
+}
+#img {
+  width: 360px;
+  height: 540px;
 }
 </style>

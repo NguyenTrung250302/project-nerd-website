@@ -23,6 +23,9 @@
   <p id="course-title">{{ courseTitle }}</p>
   <p id="main-title-course">{{ mainTitleCourse }}</p>
   <p id="content-courses-a">{{ contentCourses }}</p>
+  <!-- list introduction component -->
+  <p id="title-results">{{ titleResults }}</p>
+  <p id="content-results">{{ contentResults }}</p>
 </template>
 
 <script>
@@ -88,11 +91,23 @@ export default {
       type: String,
       required: true,
     },
+    titleResults: {
+      type: String,
+      required: true,
+    },
+    contentResults: {
+      type: String,
+      required: true,
+    },
   },
 };
 </script>
 
 <style scoped>
+p {
+  margin: 0;
+  padding: 0;
+}
 #btn-contact {
   color: #ffffff;
   font-size: 16px;
@@ -236,7 +251,7 @@ export default {
   padding: 0;
 }
 #content-courses-a {
-  font-family: "Mulish",sans-serif;
+  font-family: "Mulish", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -245,5 +260,23 @@ export default {
   color: #05192d;
   margin: 0;
   padding: 0;
+}
+#title-results {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  color: #05192d;
+}
+#content-results {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #05192d;
+  margin: 7px 0;
 }
 </style>
