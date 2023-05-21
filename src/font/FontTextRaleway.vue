@@ -3,6 +3,8 @@
   <!--  -->
   <p id="small-content">{{ ContentItemSmall }}</p>
   <p id="coming-soon">{{ contentComingSoon }}</p>
+  <!-- arbitrum component -->
+  <p id="title-arbitrum">{{ titleArbitrum }}</p>
 </template>
 
 <script>
@@ -20,11 +22,19 @@ export default {
       type: String,
       requited: true,
     },
+    titleArbitrum: {
+      type: String,
+      required: true,
+    },
   },
 };
 </script>
 
 <style scoped>
+p {
+  margin: 0;
+  padding: 0;
+}
 #content-item {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -58,5 +68,16 @@ export default {
   text-align: center;
   color: #3e3e5f;
   margin: 0;
+}
+#title-arbitrum {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  display: flex;
+  align-items: center;
+  color: #3e3e5f;
+  margin:  20px 0;
 }
 </style>

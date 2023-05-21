@@ -3,7 +3,9 @@
   <p id="btn-contact">{{ TextContactButton }}</p>
   <!-- component featured -->
   <p id="name-designer">{{ NameDesigner }}</p>
+  <p id="name-designer1">{{ NameDesigner1 }}</p>
   <p id="fundamental-item">{{ FundamentalItem }}</p>
+  <p id="fundamental-item-black">{{ FundamentalItemBlack }}</p>
   <!-- tap coming soon -->
   <p id="coming-content">{{ contentComingSoon1 }}</p>
   <!-- tap contact-us -->
@@ -39,7 +41,15 @@ export default {
       type: String,
       requited: true,
     },
+    NameDesigner1: {
+      type: String,
+      requited: true,
+    },
     FundamentalItem: {
+      type: String,
+      requited: true,
+    },
+    FundamentalItemBlack: {
       type: String,
       requited: true,
     },
@@ -128,6 +138,16 @@ p {
   color: #ffffff;
   margin: 0;
 }
+#name-designer1 {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #3e3e5f;
+}
 #fundamental-item {
   margin: 0 0;
   font-family: "Mulish", sans-serif;
@@ -139,6 +159,18 @@ p {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
+}
+#fundamental-item-black {
+  margin: 0 0;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #030303;
 }
 #coming-content {
   font-family: "Mulish", sans-serif;

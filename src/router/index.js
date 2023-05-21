@@ -9,6 +9,7 @@ import ContactRegisterTap from "@/BuildTap/ContactUsTap/ContactRegisterTap";
 import ContactTeamsTap from "@/BuildTap/ContactUsTap/ContactTeamsTap.vue";
 import AcademyMainTap from "@/BuildTap/AcademyTap/AcademyMainTap.vue";
 import AcademyDetailTap from "@/BuildTap/AcademyTap/AcademyDetailTap.vue";
+import ArticleDetail from "@/BuildTap/ArticleTap/ArticleDetail.vue";
 const routes = [
   {
     path: "/",
@@ -51,6 +52,10 @@ const routes = [
   {
     path: "/academyDetail",
     component: AcademyDetailTap,
+  },
+    {
+    path: "/articleDetail",
+    component: ArticleDetail,
   },
 ];
 

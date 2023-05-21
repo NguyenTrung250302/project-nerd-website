@@ -1,9 +1,5 @@
 <template>
   <div class="container-featured">
-    <div id="container-title">
-    <font-text-cocogoose titleItem="Featured" />
-    <div id="a"></div>
-    </div>
     <div class="pinned-wrap">
       <!-- row 1 -->
       <div class="row">
@@ -140,14 +136,12 @@
 <script>
 import PinnedItem from "./Item/PinnedItem.vue";
 import PremiumItem from "./Item/PremiumItem.vue";
-import FontTextCocogoose from "@/font/FontTextCocogoose.vue";
 import FontTextMulish from "@/font/FontTextMulish.vue";
 import FontTextRaleway from "@/font/FontTextRaleway.vue";
 export default {
   components: {
     PinnedItem,
     PremiumItem,
-    FontTextCocogoose,
     FontTextMulish,
     FontTextRaleway,
   },
@@ -186,7 +180,7 @@ export default {
   width: 425px;
   height: 200px;
   border-radius: 16px;
-  background-color: rgb(1,6,25);
+  background-color: rgb(1, 6, 25);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -238,16 +232,5 @@ export default {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-}
-#container-title {
-  width: 1300px;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-#a {
-  width: 10px;
-  height: 20px;
 }
 </style>

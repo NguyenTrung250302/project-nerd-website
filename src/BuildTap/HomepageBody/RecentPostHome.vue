@@ -1,11 +1,5 @@
 <template>
   <div class="container-recent-post">
-    <div id="container-recent">
-      <div>
-        <font-text-cocogoose titleItem="Recent Post" />
-      </div>
-      <div id="b"></div>
-    </div>
     <div class="recent-post">
       <!-- box 1 -->
       <div class="item img1">
@@ -102,7 +96,6 @@
 </template>
 
 <script>
-import FontTextCocogoose from "@/font/FontTextCocogoose.vue";
 import FontTextRaleway from "@/font/FontTextRaleway.vue";
 import FontTextMulish from "@/font/FontTextMulish.vue";
 import PremiumItem from "./Item/PremiumItem.vue";
@@ -110,7 +103,6 @@ import FundamentalItem from "./Item/FundamentalItem.vue";
 import EducationItem from "./Item/EducationItem.vue";
 export default {
   components: {
-    FontTextCocogoose,
     FontTextRaleway,
     FontTextMulish,
     PremiumItem,
@@ -122,7 +114,7 @@ export default {
 
 <style scoped>
 .container-recent-post {
-  margin: 60px 0 40px 0;
+  margin: 0 0 40px 0;
 }
 .left {
   padding-left: 20px;
@@ -179,16 +171,5 @@ export default {
   background-image: url("@/assets/img/12.png");
   background-size: cover;
   background-position: bottom;
-}
-#container-recent {
-  width: 1300px;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-#b {
-  width: 10px;
-  height: 20px;
 }
 </style>
