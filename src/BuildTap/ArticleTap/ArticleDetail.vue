@@ -2,6 +2,8 @@
   <header-view />
   <!-- Arbitrum  -->
     <arbitrum-component />
+    <!--  -->
+    <arbitrum-intro-component />
   <!-- more -->
   <div id="title-a">
     <font-text-cocogoose titleItem="You MIGHt ALSO LIKE" />
@@ -19,6 +21,7 @@ import HeaderView from "@/components/HeaderView.vue";
 import FeaturedHome from "../HomepageBody/FeaturedHome.vue";
 import FontTextCocogoose from '@/font/FontTextCocogoose.vue';
 import ArbitrumComponent from './ArbitrumComponent.vue';
+import ArbitrumIntroComponent from './ArbitrumIntroComponent.vue';
 
 export default {
   components: {
@@ -26,7 +29,8 @@ export default {
     FooterView,
     FeaturedHome,
     FontTextCocogoose,
-    ArbitrumComponent
+    ArbitrumComponent,
+    ArbitrumIntroComponent
   },
 };
 </script>

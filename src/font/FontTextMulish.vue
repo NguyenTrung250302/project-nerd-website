@@ -28,6 +28,12 @@
   <!-- list introduction component -->
   <p id="title-results">{{ titleResults }}</p>
   <p id="content-results">{{ contentResults }}</p>
+  <!-- arbitrum intro component -->
+  <p id="content-intro">{{ contentIntro }}</p>
+  <p id="note-img-chart">{{ noteImgChart }}</p>
+  <p id="share-article">{{ shareArticle }}</p>
+  <p id="font-bold">{{ fontBtnBlod }}</p>
+  <p id="blurred-letters">{{  }}</p>
 </template>
 
 <script>
@@ -106,6 +112,22 @@ export default {
       required: true,
     },
     contentResults: {
+      type: String,
+      required: true,
+    },
+    contentIntro: {
+      type: String,
+      required: true,
+    },
+    noteImgChart: {
+      type: String,
+      required: true,
+    },
+    shareArticle: {
+      type: String,
+      required: true,
+    },
+    fontBtnBlod: {
       type: String,
       required: true,
     },
@@ -262,6 +284,7 @@ p {
   line-height: 24px;
   color: #6e757c;
 }
+/* course */
 #course-title {
   font-family: "Mulish", sans-serif;
   font-weight: 800;
@@ -293,6 +316,7 @@ p {
   margin: 0;
   padding: 0;
 }
+/* results */
 #title-results {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
@@ -310,5 +334,48 @@ p {
   align-items: center;
   color: #05192d;
   margin: 7px 0;
+}
+/* intro component */
+#content-intro {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #4b4b5a;
+}
+#note-img-chart {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #4b4b5a;
+  opacity: 0.8;
+  margin: 10px 0;
+}
+#share-article {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3e3e5f;
+}
+#font-bold {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #4b4b5a;
+  margin-left: 10px;
+  border-bottom: 1px solid #4b4b5a;
 }
 </style>

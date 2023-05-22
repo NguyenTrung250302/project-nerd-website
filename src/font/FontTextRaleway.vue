@@ -5,6 +5,7 @@
   <p id="coming-soon">{{ contentComingSoon }}</p>
   <!-- arbitrum component -->
   <p id="title-arbitrum">{{ titleArbitrum }}</p>
+  <p id="title-intro">{{ titleIntro }}</p>
 </template>
 
 <script>
@@ -23,6 +24,10 @@ export default {
       requited: true,
     },
     titleArbitrum: {
+      type: String,
+      required: true,
+    },
+    titleIntro: {
       type: String,
       required: true,
     },
@@ -78,6 +83,12 @@ p {
   display: flex;
   align-items: center;
   color: #3e3e5f;
-  margin:  20px 0;
+  margin: 20px 0;
+}
+#title-intro {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #3e3e5f
 }
 </style>

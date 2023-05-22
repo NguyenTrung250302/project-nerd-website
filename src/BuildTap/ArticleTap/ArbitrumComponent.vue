@@ -49,7 +49,7 @@ export default {
   height: 535px;
   margin: 30px auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 #img-arbitrum {
   width: 580px;
