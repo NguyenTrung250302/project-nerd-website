@@ -3,27 +3,27 @@
     <!-- 1 -->
     <div class="font-nav">
       <div class="jamb"></div>
-      <font-text-mulish fontBtnBlod="Intro1" />
+      <font-text-mulish fontBtnBlur="Intro1" />
     </div>
     <!-- 2 -->
     <div class="font-nav">
       <div class="jamb"></div>
-      <font-text-mulish fontBtnBlod="Arbitrum DAO" />
+      <font-text-mulish fontBtnBlur="Arbitrum DAO" />
     </div>
     <!-- 3 -->
     <div class="font-nav">
       <div class="jamb"></div>
-      <font-text-mulish fontBtnBlod="Arbitrum Orbit" />
+      <font-text-mulish fontBtnBlur="Arbitrum Orbit" />
     </div>
     <!-- 4 -->
     <div class="font-nav">
       <div class="jamb"></div>
-      <font-text-mulish fontBtnBlod="The fair value of $ARB" />
+      <font-text-mulish fontBtnBlur="The fair value of $ARB" />
     </div>
     <!-- 5 -->
     <div class="font-nav">
       <div class="jamb"></div>
-      <font-text-mulish fontBtnBlod="Vài dòng cuối" />
+      <font-text-mulish fontBtnBlur="Vài dòng cuối" />
     </div>
   </div>
 </template>
@@ -34,7 +34,7 @@ export default {
   components: { FontTextMulish },
   data() {
     return {
-      
+     
     };
   },
   methods: {

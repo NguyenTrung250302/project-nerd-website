@@ -12,10 +12,10 @@
           </div>
           <!-- content -->
           <div class="form-item-below">
-            <font-text-mulish NameDesigner="by Thanh Tung" />
-            <font-text-raleway ContentItemHomePage="The Bridge Series: A" />
-            <font-text-raleway ContentItemHomePage="Travel Through" />
-            <font-text-raleway ContentItemHomePage="Wormhole" />
+            <form-text-1
+              thanhTung="by Thanh Tung"
+              ContentBig="The Bridge Series: A Travel Through Wormhole"
+            />
           </div>
         </div>
         <div class="pinned-item">
@@ -28,9 +28,9 @@
             </div>
             <!-- content -->
             <div class="form-item-below">
-              <font-text-mulish NameDesigner="by Tran Thuan" />
-              <font-text-raleway
-                ContentItemSmall="The Bridge Series: The Designs"
+              <form-text-2
+                nameDesigner="by Thanh Tung"
+                contentSmall="The Bridge Series: The Designs"
               />
             </div>
           </div>
@@ -43,9 +43,9 @@
             </div>
             <!-- content -->
             <div class="form-item-below">
-              <font-text-mulish NameDesigner="by yy.#0101" />
-              <font-text-raleway
-                ContentItemSmall="Arbitrum DAO and $ARB: Hãy đu giá đúng!"
+              <form-text-2
+                nameDesigner="by Thanh Tung"
+                contentSmall="Arbitrum DAO and $ARB: Hãy đu giá đúng!"
               />
             </div>
           </div>
@@ -60,8 +60,7 @@
             </div>
             <!-- content -->
             <div class="form-item-below">
-              <font-text-mulish NameDesigner="by Thanh Tung" />
-              <font-text-raleway ContentItemSmall="In B(ank)TC We Trust" />
+              <form-text-2 nameDesigner="by yy.#0101" contentSmall="In B(ank)TC We Trust" />
             </div>
           </div>
           <!-- box 5 -->
@@ -73,10 +72,7 @@
             </div>
             <!-- content -->
             <div class="form-item-below">
-              <font-text-mulish NameDesigner="by Tran Thuan" />
-              <font-text-raleway
-                ContentItemSmall="Transaction Order Flows & MEV"
-              />
+              <form-text-2 nameDesigner="by Tran Thuan" contentSmall="Transaction Order Flows & MEV" />
             </div>
           </div>
         </div>
@@ -92,10 +88,7 @@
           </div>
           <!-- content -->
           <div class="form-item-below">
-            <font-text-mulish NameDesigner="by yy.#0101" />
-            <font-text-raleway
-              ContentItemSmall="SVB, USDC depeg, hệ quả của QT và bài học về Convexity"
-            />
+            <form-text-2 nameDesigner="by yy.#0101" contentSmall="SVB, USDC depeg, hệ quả của QT và bài học về Convexity" />
           </div>
         </div>
         <!-- box 7 -->
@@ -107,10 +100,7 @@
           </div>
           <!-- content -->
           <div class="form-item-below">
-            <font-text-mulish NameDesigner="by Thanh Tung" />
-            <font-text-raleway
-              ContentItemSmall="InfinityPools: Leverage to infinity and beyond"
-            />
+            <form-text-2 nameDesigner="by Thanh Tung" contentSmall="InfinityPools: Leverage to infinity and beyond" />
           </div>
         </div>
         <!-- box 8 -->
@@ -122,10 +112,7 @@
           </div>
           <!-- content -->
           <div class="form-item-below">
-            <font-text-mulish NameDesigner="by Tran Thuan" />
-            <font-text-raleway
-              ContentItemSmall="MEV Part 1 : Những điều cần biết"
-            />
+            <form-text-2 nameDesigner="by Tran Thuan" contentSmall="MEV Part 1 : Những điều cần biết" />
           </div>
         </div>
       </div>
@@ -136,14 +123,14 @@
 <script>
 import PinnedItem from "./Item/PinnedItem.vue";
 import PremiumItem from "./Item/PremiumItem.vue";
-import FontTextMulish from "@/font/FontTextMulish.vue";
-import FontTextRaleway from "@/font/FontTextRaleway.vue";
+import FormText1 from "./Item/FormText1.vue";
+import FormText2 from "@/BuildTap/HomepageBody/Item/FormText2.vue";
 export default {
   components: {
     PinnedItem,
     PremiumItem,
-    FontTextMulish,
-    FontTextRaleway,
+    FormText1,
+    FormText2,
   },
 };
 </script>

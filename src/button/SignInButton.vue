@@ -1,5 +1,5 @@
 <template>
-    <button class="btn-login">Sign In</button>
+    <button id="btn-login">Sign In</button>
 </template>
 
 <script>
@@ -7,7 +7,7 @@ export default {};
 </script>
 
 <style scoped>
-.btn-login {
+#btn-login {
   margin: 0 10px;
   width: 80px;
   height: 40px;
@@ -24,7 +24,7 @@ export default {};
   box-shadow: 0px 2px 5px rgba(103, 110, 118, 0.08),
     0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
-.btn-login:hover {
+#btn-login:hover {
   cursor: pointer;
 }
 </style>

@@ -11,10 +11,10 @@
         </div>
         <!-- content -->
         <div class="item-below">
-          <font-text-mulish NameDesigner="by Thanh Tung" />
-          <font-text-raleway ContentItemHomePage="The Bridge Series: A" />
-          <font-text-raleway ContentItemHomePage="Travel Through" />
-          <font-text-raleway ContentItemHomePage="Wormhole" />
+          <form-text-1
+            thanhTung="by Thanh Tung"
+            ContentBig="The Bridge Series: A Travel Through Wormhole"
+          />
         </div>
       </div>
       <!-- box 2 -->
@@ -27,10 +27,12 @@
         </div>
         <!-- content -->
         <div class="item-below">
-          <font-text-mulish NameDesigner="by Thanh Tung" />
-          <font-text-raleway ContentItemHomePage="SVB, USDC depeg," />
-          <font-text-raleway ContentItemHomePage=" hệ quả của QT và bài học" />
-          <font-text-raleway ContentItemHomePage="về Convexity" />
+          <form-text-1
+            thanhTung="by Thanh Tung"
+            ContentBig="SVB, USDC depeg, 
+            hệ quả của QT và bài học 
+            về Convexity"
+          />
         </div>
       </div>
       <!-- box 3 -->
@@ -43,9 +45,11 @@
         </div>
         <!-- content -->
         <div class="item-below">
-          <font-text-mulish NameDesigner="by Thanh Tung" />
-          <font-text-raleway ContentItemHomePage="Arbitrum DAO and $ARB:" />
-          <font-text-raleway ContentItemHomePage="đu giá đúng!" />
+          <form-text-1
+            thanhTung="by Thanh Tung"
+            ContentBig="Arbitrum DAO and $ARB: 
+            Hãy đu giá đúng!"
+          />
         </div>
       </div>
       <!-- box 4 -->
@@ -58,9 +62,11 @@
         </div>
         <!-- content -->
         <div class="item-below">
-          <font-text-mulish NameDesigner="by Thanh Tung" />
-          <font-text-raleway ContentItemHomePage="MEV Part 1 : Những điều " />
-          <font-text-raleway ContentItemHomePage="cần biết" />
+          <form-text-1
+            thanhTung="by Thanh Tung"
+            ContentBig="MEV Part 1 : Những điều 
+            cần biết"
+          />
         </div>
       </div>
       <!-- box 5 -->
@@ -73,8 +79,10 @@
         </div>
         <!-- content -->
         <div class="item-below">
-          <font-text-mulish NameDesigner="by Thanh Tung" />
-          <font-text-raleway ContentItemHomePage="Weekly Report #3" />
+          <form-text-1
+            thanhTung="by Thanh Tung"
+            ContentBig="Weekly Report #3"
+          />
         </div>
       </div>
       <!-- box 6 -->
@@ -87,8 +95,10 @@
         </div>
         <!-- content -->
         <div class="item-below">
-          <font-text-mulish NameDesigner="by Thanh Tung" />
-          <font-text-raleway ContentItemHomePage="Weekly Report #4" />
+          <form-text-1
+            thanhTung="by Thanh Tung"
+            ContentBig="Weekly Report #4"
+          />
         </div>
       </div>
     </div>
@@ -96,18 +106,16 @@
 </template>
 
 <script>
-import FontTextRaleway from "@/font/FontTextRaleway.vue";
-import FontTextMulish from "@/font/FontTextMulish.vue";
 import PremiumItem from "./Item/PremiumItem.vue";
 import FundamentalItem from "./Item/FundamentalItem.vue";
 import EducationItem from "./Item/EducationItem.vue";
+import FormText1 from "./Item/FormText1.vue";
 export default {
   components: {
-    FontTextRaleway,
-    FontTextMulish,
     PremiumItem,
     FundamentalItem,
     EducationItem,
+    FormText1,
   },
 };
 </script>

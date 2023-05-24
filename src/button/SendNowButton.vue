@@ -1,20 +1,15 @@
 <template>
-  <button class="btn-send-now">
-    <font-text-mulish btnSendNow="Send Now" />
-  </button>
+  <button id="btn-send-now">Send Now</button>
 </template>
 
 <script>
-import FontTextMulish from "@/font/FontTextMulish.vue";
 export default {
-  components: {
-    FontTextMulish,
-  },
+  components: {},
 };
 </script>
 
 <style scoped>
-.btn-send-now {
+#btn-send-now {
   width: 145px;
   height: 48px;
   background: #000000;
@@ -24,8 +19,14 @@ export default {
   justify-content: center;
   align-items: center;
   border: none;
+  font-family: "Mulish",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #fcfdfe;
 }
-.btn-send-now:hover {
+#btn-send-now:hover {
   cursor: pointer;
 }
 </style>

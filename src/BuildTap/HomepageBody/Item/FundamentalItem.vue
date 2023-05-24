@@ -1,14 +1,14 @@
 <template>
   <div id="fundamental">
-    <font-text-mulish FundamentalItem="Fundamental" />
+    <p id="fundamental-text">Fundamental</p>
   </div>
 </template>
 
 <script>
-import FontTextMulish from "@/font/FontTextMulish.vue";
+// import FontTextMulish from "@/font/FontTextMulish.vue";
 export default {
   components: {
-    FontTextMulish,
+    // FontTextMulish,
   },
 };
 </script>
@@ -25,5 +25,17 @@ export default {
   width: auto;
   height: 20px;
   margin-right: 5px;
+}
+#fundamental-text {
+  margin: 0 0;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 </style>

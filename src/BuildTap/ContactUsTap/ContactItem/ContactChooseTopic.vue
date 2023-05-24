@@ -9,14 +9,21 @@
       />
     </div>
     <!-- drop down -->
+    <div class="dropdown-container">
+      <div class="dropdown-icon" @click="toggleDropdown">
+        <icon-drop-down />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import IconTopic from "@/Icon/IconTopic.vue";
+import IconDropDown from "@/Icon/IconDropDown.vue";
 export default {
   components: {
-    IconTopic
+    IconTopic,
+    IconDropDown,
   },
   props: {
     placeholderText: {
@@ -36,6 +43,7 @@ export default {
 #contact-topic {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 527px;
   height: 56px;
   background: #f5f6f7;
@@ -43,8 +51,8 @@ export default {
   margin-bottom: 15px;
 }
 #a {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 #custom-input {
   font-family: "Mulish", sans-serif;

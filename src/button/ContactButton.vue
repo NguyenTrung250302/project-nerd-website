@@ -1,15 +1,12 @@
 <template>
   <button class="btn-contact">
-    <font-text-mulish TextContactButton="Connect Wallet" />
+    <p id="btn-contact-content">Connect Wallet</p>
   </button>
 </template>
 
 <script>
-import FontTextMulish from "@/font/FontTextMulish.vue";
 export default {
-  components: {
-    FontTextMulish,
-  },
+  components: {},
 };
 </script>
 
@@ -28,5 +25,15 @@ export default {
 }
 .btn-contact:hover {
   cursor: pointer;
+}
+#btn-contact-content {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "mulish", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
 }
 </style>

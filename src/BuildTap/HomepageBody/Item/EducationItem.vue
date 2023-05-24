@@ -1,20 +1,17 @@
 <template>
-  <div id="fundamental">
-    <font-text-mulish FundamentalItem="Education" />
+  <div id="education">
+    <p id="text-education">education</p>
   </div>
 </template>
 
 <script>
-import FontTextMulish from "@/font/FontTextMulish.vue";
 export default {
-  components: {
-    FontTextMulish,
-  },
+  components: {},
 };
 </script>
 
 <style scoped>
-#fundamental {
+#education {
   border: 1px solid #ffffff;
   border-radius: 25px;
   box-sizing: border-box;
@@ -25,5 +22,17 @@ export default {
   width: auto;
   height: 20px;
   margin-right: 5px;
+}
+#text-education {
+  margin: 0 0;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 </style>

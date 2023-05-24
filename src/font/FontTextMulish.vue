@@ -1,18 +1,10 @@
 <template>
-  <!-- header -->
-  <p id="btn-contact">{{ TextContactButton }}</p>
-  <!-- component featured -->
-  <p id="name-designer">{{ NameDesigner }}</p>
   <p id="name-designer1">{{ NameDesigner1 }}</p>
-  <p id="fundamental-item">{{ FundamentalItem }}</p>
-  <p id="fundamental-item-black">{{ FundamentalItemBlack }}</p>
   <!-- tap coming soon -->
   <p id="coming-content">{{ contentComingSoon1 }}</p>
   <!-- tap contact-us -->
   <p id="contact-us">{{ titleContactUs }}</p>
   <p id="content-notes">{{ contentNotes }}</p>
-  <!-- btn send now -->
-  <p id="btn-send-now">{{ btnSendNow }}</p>
   <!-- tap contact teams -->
   <p id="title-logo-teams">{{ titleLogoTeams }}</p>
   <p id="role-name">{{ roleName }}</p>
@@ -32,30 +24,14 @@
   <p id="content-intro">{{ contentIntro }}</p>
   <p id="note-img-chart">{{ noteImgChart }}</p>
   <p id="share-article">{{ shareArticle }}</p>
-  <p id="font-bold">{{ fontBtnBlod }}</p>
+  <p id="font-blur">{{ fontBtnBlur }}</p>
   <p id="blurred-letters">{{  }}</p>
 </template>
 
 <script>
 export default {
   props: {
-    TextContactButton: {
-      type: String,
-      requited: true,
-    },
-    NameDesigner: {
-      type: String,
-      requited: true,
-    },
     NameDesigner1: {
-      type: String,
-      requited: true,
-    },
-    FundamentalItem: {
-      type: String,
-      requited: true,
-    },
-    FundamentalItemBlack: {
       type: String,
       requited: true,
     },
@@ -68,10 +44,6 @@ export default {
       requited: true,
     },
     contentNotes: {
-      type: String,
-      requited: true,
-    },
-    btnSendNow: {
       type: String,
       requited: true,
     },
@@ -127,7 +99,7 @@ export default {
       type: String,
       required: true,
     },
-    fontBtnBlod: {
+    fontBtnBlur: {
       type: String,
       required: true,
     },
@@ -140,26 +112,6 @@ p {
   margin: 0;
   padding: 0;
 }
-#btn-contact {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 600;
-  font-size: 14px;
-  font-family: "mulish", sans-serif;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-}
-#name-designer {
-  font-family: "Mulish", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  margin: 0;
-}
 #name-designer1 {
   font-family: "Mulish", sans-serif;
   font-style: normal;
@@ -170,30 +122,7 @@ p {
   align-items: center;
   color: #3e3e5f;
 }
-#fundamental-item {
-  margin: 0 0;
-  font-family: "Mulish", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 8px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-#fundamental-item-black {
-  margin: 0 0;
-  font-family: "Mulish", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 8px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #030303;
-}
+
 #coming-content {
   font-family: "Mulish", sans-serif;
   font-style: normal;
@@ -223,15 +152,6 @@ p {
   line-height: 24px;
   color: #6e757c;
   margin: 0;
-}
-#btn-send-now {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  color: #fcfdfe;
 }
 #title-logo-teams {
   font-family: "Mulish", sans-serif;
@@ -324,6 +244,8 @@ p {
   display: flex;
   align-items: center;
   color: #05192d;
+  margin: 0;
+  padding: 0;
 }
 #content-results {
   font-family: "Mulish", sans-serif;
@@ -345,6 +267,8 @@ p {
   display: flex;
   align-items: center;
   color: #4b4b5a;
+  margin: 0;
+  padding: 0;
 }
 #note-img-chart {
   font-family: "Mulish", sans-serif;
@@ -365,8 +289,10 @@ p {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #3e3e5f;
+  margin: 0;
+  padding: 0;
 }
-#font-bold {
+#font-blur {
   font-family: "Mulish", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -376,6 +302,6 @@ p {
   align-items: center;
   color: #4b4b5a;
   margin-left: 10px;
-  border-bottom: 1px solid #4b4b5a;
+  /* border-bottom: 1px solid #4b4b5a; */
 }
 </style>
