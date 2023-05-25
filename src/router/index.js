@@ -10,6 +10,7 @@ import ContactTeamsTap from "@/BuildTap/ContactUsTap/ContactTeamsTap.vue";
 import AcademyMainTap from "@/BuildTap/AcademyTap/AcademyMainTap.vue";
 import AcademyDetailTap from "@/BuildTap/AcademyTap/AcademyDetailTap.vue";
 import ArticleDetail from "@/BuildTap/ArticleTap/ArticleDetail.vue";
+import ComponentTest from "@/BuildTap/Test/ComponentTest.vue";
 const routes = [
   {
     path: "/",
@@ -20,6 +21,10 @@ const routes = [
     path: "/about",
     name: "about",
     component: AboutView,
+  },
+  {
+    path: "/testUi",
+    component: ComponentTest,
   },
   {
     path: "/comingSoon",

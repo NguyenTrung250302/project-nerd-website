@@ -24,6 +24,7 @@ export default {
 </script>
 
 <style scoped>
+@import url("@/assets/globalFont.css");
 #title-item {
   font-family: "Cocogoose", sans-serif;
   font-style: normal;

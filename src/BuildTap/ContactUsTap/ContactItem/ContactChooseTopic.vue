@@ -10,9 +10,9 @@
     </div>
     <!-- drop down -->
     <div class="dropdown-container">
-      <div class="dropdown-icon" @click="toggleDropdown">
-        <icon-drop-down />
-      </div>
+      <icon-drop-down />
+      <!-- select -->
+      <div></div>
     </div>
   </div>
 </template>
