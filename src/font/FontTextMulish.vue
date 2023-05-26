@@ -1,7 +1,5 @@
 <template>
   <p id="name-designer1">{{ NameDesigner1 }}</p>
-  <!-- tap coming soon -->
-  <p id="coming-content">{{ contentComingSoon1 }}</p>
   <!-- tap contact-us -->
   <p id="contact-us">{{ titleContactUs }}</p>
   <p id="content-notes">{{ contentNotes }}</p>
@@ -32,10 +30,6 @@
 export default {
   props: {
     NameDesigner1: {
-      type: String,
-      requited: true,
-    },
-    contentComingSoon1: {
       type: String,
       requited: true,
     },
@@ -121,19 +115,6 @@ p {
   display: flex;
   align-items: center;
   color: #3e3e5f;
-}
-
-#coming-content {
-  font-family: "Mulish", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: rgba(62, 62, 95, 0.655);
-  margin: 0;
-  padding: 0;
 }
 #contact-us {
   font-family: "Mulish", sans-serif;

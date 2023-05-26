@@ -21,7 +21,7 @@
     <!-- button contact -->
     <div id="btn-contact">
       <sign-in-button />
-      <contact-button />
+      <connect-button />
     </div>
   </div>
 </template>
@@ -30,23 +30,23 @@
 import LogoHeader from "@/Icon/LogoHeader.vue";
 import FontTextNavigationBar from "@/font/FontTextNavigationBar.vue";
 import SignInButton from "@/button/SignInButton.vue";
-import ContactButton from "@/button/ContactButton.vue";
+import ConnectButton from "@/button/ConnentButton.vue";
 
 export default {
   components: {
     LogoHeader,
     FontTextNavigationBar,
     SignInButton,
-    ContactButton,
+    ConnectButton,
   },
   data() {
     return {
       navigationItems: [
-        { text: "Articles", path: "/articleDetail", isActive: false },
+        { text: "Articles", path: "/", isActive: false },
         { text: "Nerd Academy", path: "/academy", isActive: false },
         { text: "Weekly Reports", path: "/contactUs", isActive: false },
         { text: "Dashboard", path: "/teams", isActive: false },
-        { text: "About", path: "/about", isActive: false },
+        { text: "About", path: "/", isActive: false },
       ],
     };
   },
@@ -108,11 +108,9 @@ export default {
 #tick {
   width: 8px;
   height: 8px;
-  left: 217.5px;
-  top: 14px;
   background: rgba(62, 62, 95, 0.75);
   border-radius: 50%;
-  margin-top: 13px;
+  margin: 16px 0 0 4px;
 }
 #btn-contact {
   display: flex;

@@ -14,12 +14,10 @@ import ComponentTest from "@/BuildTap/Test/ComponentTest.vue";
 const routes = [
   {
     path: "/",
-    name: "home",
     component: HomeView,
   },
   {
     path: "/about",
-    name: "about",
     component: AboutView,
   },
   {

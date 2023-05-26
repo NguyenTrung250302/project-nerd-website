@@ -35,7 +35,7 @@
             </div>
           </div>
           <!-- box 3 -->
-          <div class="pinned-item-small img3">
+          <div class="pinned-item-small img3" @click="changeClick">
             <!-- item -->
             <div class="form-item-above">
               <pinned-item />
@@ -60,7 +60,10 @@
             </div>
             <!-- content -->
             <div class="form-item-below">
-              <form-text-2 nameDesigner="by yy.#0101" contentSmall="In B(ank)TC We Trust" />
+              <form-text-2
+                nameDesigner="by yy.#0101"
+                contentSmall="In B(ank)TC We Trust"
+              />
             </div>
           </div>
           <!-- box 5 -->
@@ -72,7 +75,10 @@
             </div>
             <!-- content -->
             <div class="form-item-below">
-              <form-text-2 nameDesigner="by Tran Thuan" contentSmall="Transaction Order Flows & MEV" />
+              <form-text-2
+                nameDesigner="by Tran Thuan"
+                contentSmall="Transaction Order Flows & MEV"
+              />
             </div>
           </div>
         </div>
@@ -88,7 +94,10 @@
           </div>
           <!-- content -->
           <div class="form-item-below">
-            <form-text-2 nameDesigner="by yy.#0101" contentSmall="SVB, USDC depeg, hệ quả của QT và bài học về Convexity" />
+            <form-text-2
+              nameDesigner="by yy.#0101"
+              contentSmall="SVB, USDC depeg, hệ quả của QT và bài học về Convexity"
+            />
           </div>
         </div>
         <!-- box 7 -->
@@ -100,7 +109,10 @@
           </div>
           <!-- content -->
           <div class="form-item-below">
-            <form-text-2 nameDesigner="by Thanh Tung" contentSmall="InfinityPools: Leverage to infinity and beyond" />
+            <form-text-2
+              nameDesigner="by Thanh Tung"
+              contentSmall="InfinityPools: Leverage to infinity and beyond"
+            />
           </div>
         </div>
         <!-- box 8 -->
@@ -112,7 +124,10 @@
           </div>
           <!-- content -->
           <div class="form-item-below">
-            <form-text-2 nameDesigner="by Tran Thuan" contentSmall="MEV Part 1 : Những điều cần biết" />
+            <form-text-2
+              nameDesigner="by Tran Thuan"
+              contentSmall="MEV Part 1 : Những điều cần biết"
+            />
           </div>
         </div>
       </div>
@@ -131,6 +146,11 @@ export default {
     PremiumItem,
     FormText1,
     FormText2,
+  },
+  methods: {
+    changeClick() {
+      this.$router.push("/articleDetail");
+    },
   },
 };
 </script>
@@ -162,6 +182,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease;
 }
 .pinned-item-small {
   width: 425px;
@@ -171,6 +192,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease;
 }
 .form-item-above {
   display: flex;
@@ -183,41 +205,73 @@ export default {
   background-image: url("@/assets/img/1.png");
   background-size: cover;
   background-position: center;
+  cursor: pointer;
+}
+.img1:hover {
+  transform: scale(1.02);
 }
 .img2 {
   background-image: url("@/assets/img/2.png");
   background-size: cover;
   background-position: center;
+  cursor: pointer;
+}
+.img2:hover {
+  transform: scale(1.03);
 }
 .img3 {
   background-image: url("@/assets/img/4.png");
   background-size: cover;
   background-position: center;
+  cursor: pointer;
+}
+.img3:hover {
+  transform: scale(1.03);
 }
 .img4 {
   background-image: url("@/assets/img/3.png");
   background-size: cover;
   background-position: center;
+  cursor: pointer;
+}
+.img4:hover {
+  transform: scale(1.03);
 }
 .img5 {
   background-image: url("@/assets/img/5.png");
   background-size: cover;
   background-position: center;
+  cursor: pointer;
+}
+.img5:hover {
+  transform: scale(1.03);
 }
 .img6 {
   background-image: url("@/assets/img/6.png");
   background-size: cover;
   background-position: center;
+  cursor: pointer;
+}
+.img6:hover {
+  transform: scale(1.03);
 }
 .img7 {
   background-image: url("@/assets/img/7.png");
   background-size: cover;
   background-position: center;
+  cursor: pointer;
+}
+.img7:hover {
+  transform: scale(1.03);
 }
 .img8 {
   background-image: url("@/assets/img/11.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
+}
+.img8:hover {
+  transform: scale(1.03);
 }
 </style>

@@ -13,7 +13,7 @@
 import IconEmail from "@/Icon/IconEmail.vue";
 export default {
   components: {
-    IconEmail
+    IconEmail,
   },
   props: {
     placeholderText: {
@@ -53,5 +53,10 @@ export default {
   outline: none;
   border-color: transparent;
   width: 300px;
+}
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "mulish", sans-serif;
 }
 </style>

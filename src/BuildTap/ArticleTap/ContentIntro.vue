@@ -39,7 +39,7 @@
         tức là không cần đến đội ngũ coreteam phải đi propose."
       />
       <!-- img -->
-      <div id="img-chart">img here</div>
+      <img id="img-chart" src="@/assets/img/1.png" alt="loading">
       <div id="note-img">
         <font-text-mulish noteImgChart="Self executing DAO" />
       </div>
@@ -141,6 +141,8 @@ export default {
   height: 1200px;
   background-color: cadetblue;
   margin-top: 50px;
+  overflow: hidden;
+  /* object-fit: cover; */
 }
 #note-img {
   width: 740px;

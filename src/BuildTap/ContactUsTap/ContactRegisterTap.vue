@@ -8,15 +8,16 @@
     </div>
     <!-- body -->
     <div id="contact-partner">
-      <!-- left -->
+      <!-- left, input info -->
       <div id="contact-modal">
         <div id="form-contact">
           <contact-email placeholderText="Email address"/>
           <contact-name placeholderText="Name"/>
         </div>
+        <!-- btn click -->
         <send-now-button id="btn-send-now" />
       </div>
-      <!-- right -->
+      <!-- right background -->
       <div id="background-register">
       </div>
     </div>

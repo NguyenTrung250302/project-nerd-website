@@ -1,86 +1,58 @@
 <template>
-  <header>
-    <nav>
-      <ul>
-        <li v-for="item in navItems" :key="item.id" :class="{ active: activeItem === item.id }">
-          <a href="#" @click="toggleItem(item.id)">{{ item.label }}</a>
-          <span v-if="activeItem === item.id" class="dot">&#9679;</span>
-          <div v-if="activeItem === item.id">
-            {{ item.content }}
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div id="container-register">
+    <!-- title -->
+    <div id="title-contact">
+      <font-text-mulish titleContactUs="Course Register" />
+      <font-text-mulish contentNotes="Introduction to Python" />
+    </div>
+    <!-- body -->
+    <div id="contact-partner">
+      <!--component input info -->
+      <div id="contact-modal">
+        <div id="form-contact">
+          <contact-email placeholderText="Email address" />
+          <contact-name placeholderText="Name" />
+        </div>
+        <!--component btn click -->
+        <send-now-button id="btn-send-now" />
+      </div>
+    </div>
+    <!--  -->
+    <div class="image-container">
+      <img src="@/assets/img/1.png" alt="Your Image" />
+    </div>
+  </div>
 </template>
 
 <script>
+import FontTextMulish from "@/font/FontTextMulish.vue";
+import SendNowButton from "@/button/SendNowButton.vue";
+import ContactEmail from "@/BuildTap/ContactUsTap/ContactItem/ContactEmail.vue";
+import ContactName from "@/BuildTap/ContactUsTap/ContactItem/ContactName.vue";
 export default {
-  data() {
-    return {
-      activeItem: null,
-      navItems: [
-        { id: 'home', label: 'Trang chủ', content: 'Nội dung của Trang chủ' },
-        { id: 'category', label: 'Danh mục', content: 'Nội dung của Danh mục' },
-        { id: 'about', label: 'Về chúng tôi', content: 'Nội dung của Về chúng tôi' },
-        { id: 'contact', label: 'Liên hệ', content: 'Nội dung của Liên hệ' }
-      ]
-    };
+  components: {
+    FontTextMulish,
+    ContactEmail,
+    SendNowButton,
+    ContactName,
   },
-  methods: {
-    toggleItem(itemId) {
-      if (this.activeItem === itemId) {
-        this.activeItem = null;
-      } else {
-        this.activeItem = itemId;
-      }
-    }
-  }
 };
 </script>
 
 <style scoped>
-header {
-  background-color: #f2f2f2;
-  padding: 10px;
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
+.image-container img {
+  transition: transform 0.5s ease;
 }
 
-nav ul li {
-  margin-right: 10px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  padding: 5px;
-}
-
-nav ul li.active a {
-  color: #ff0000; /* Màu nổi bật cho mục được chọn */
-}
-
-nav ul li a:hover {
-  color: #666;
-}
-
-div {
-  background-color: #fff;
-  padding: 10px;
-  display: none;
-}
-
-.active {
-  display: block;
-}
-
-.dot {
-  margin-left: 5px;
+.image-container:hover img {
+  transform: scale(1.1);
 }
 </style>

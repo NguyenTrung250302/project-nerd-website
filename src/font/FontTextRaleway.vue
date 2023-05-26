@@ -1,5 +1,4 @@
 <template>
-  <p id="coming-soon">{{ contentComingSoon }}</p>
   <!-- arbitrum component -->
   <p id="title-arbitrum">{{ titleArbitrum }}</p>
   <p id="title-intro">{{ titleIntro }}</p>
@@ -8,10 +7,6 @@
 <script>
 export default {
   props: {
-    contentComingSoon: {
-      type: String,
-      requited: true,
-    },
     titleArbitrum: {
       type: String,
       required: true,
@@ -28,18 +23,6 @@ export default {
 p {
   margin: 0;
   padding: 0;
-}
-#coming-soon {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 38px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #3e3e5f;
-  margin: 0;
 }
 #title-arbitrum {
   font-family: "Raleway", sans-serif;

@@ -143,6 +143,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease;
 }
 .item-above {
   display: flex;
@@ -154,6 +155,10 @@ export default {
   background-image: url("@/assets/img/1.png");
   background-size: cover;
   background-position: center;
+}
+.item:hover {
+  transform: scale(1.02);
+  cursor: pointer;
 }
 .img2 {
   background-image: url("@/assets/img/6.png");

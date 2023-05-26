@@ -11,17 +11,16 @@
       <!-- left -->
       <div id="contact-modal">
         <div id="form-contact">
-          <contact-email placeholderText="Email address"/>
-          <contact-name placeholderText="Name"/>
-          <contact-company placeholderText="Company name"/>
-          <contact-choose-topic placeholderText="Choose Topic"/>
-          <contact-help placeholderContact="How can we help you ?"/> 
+          <contact-email placeholderText="Email address" />
+          <contact-name placeholderText="Name" />
+          <contact-company placeholderText="Company name" />
+          <contact-choose-topic placeholderText="Choose Topic" />
+          <contact-help placeholderContact="How can we help you ?" />
         </div>
         <send-now-button id="btn-send-now" />
       </div>
       <!-- right -->
-      <div id="background-contact">
-      </div>
+      <div id="background-contact"></div>
     </div>
     <!--  -->
     <footer-view />
@@ -36,8 +35,8 @@ import SendNowButton from "@/button/SendNowButton.vue";
 import ContactEmail from "@/BuildTap/ContactUsTap/ContactItem/ContactEmail.vue";
 import ContactHelp from "@/BuildTap/ContactUsTap/ContactItem/ContactHelp.vue";
 import ContactName from "@/BuildTap/ContactUsTap/ContactItem/ContactName.vue";
-import ContactCompany from './ContactItem/ContactCompany.vue';
-import ContactChooseTopic from './ContactItem/ContactChooseTopic.vue';
+import ContactCompany from "./ContactItem/ContactCompany.vue";
+import ContactChooseTopic from "./ContactItem/ContactChooseTopic.vue";
 export default {
   components: {
     HeaderView,
@@ -48,8 +47,12 @@ export default {
     ContactHelp,
     ContactName,
     ContactCompany,
-    ContactChooseTopic
+    ContactChooseTopic,
   },
+  data() {
+    return {};
+  },
+  methods: {},
 };
 </script>
 
@@ -70,7 +73,7 @@ export default {
 }
 #contact-modal {
   width: 590px;
-  height: 530px;
+  height: auto;
   box-shadow: 1px 32px 32px -20px #dedede;
   border-radius: 16px;
   padding: 40px 0;
@@ -90,8 +93,8 @@ export default {
   background-size: cover;
 }
 .custom-input::placeholder {
-  color: #2bd3d3; 
-  font-size: 16px; 
-  font-family: 'mulish',sans-serif;
+  color: #2bd3d3;
+  font-size: 16px;
+  font-family: "mulish", sans-serif;
 }
 </style>

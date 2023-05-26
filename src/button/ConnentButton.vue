@@ -22,9 +22,15 @@ export default {
   background-color: #000000;
   box-shadow: 0px 2px 5px rgba(103, 110, 118, 0.08),
     0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 1px 1px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+    transition-property: background-color, padding-left, padding-right, color,
+    width;
+  text-decoration: none;
 }
 .btn-contact:hover {
   cursor: pointer;
+  background-color: #eb8347;
+  transform: scale(1.05);
 }
 #btn-contact-content {
   color: #ffffff;
