@@ -18,9 +18,6 @@
       </div>
     </div>
     <!--  -->
-    <div class="image-container">
-      <img src="@/assets/img/1.png" alt="Your Image" />
-    </div>
   </div>
 </template>
 
@@ -38,21 +35,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.image-container {
-  position: relative;
-  overflow: hidden;
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
-}
-
-.image-container img {
-  transition: transform 0.5s ease;
-}
-
-.image-container:hover img {
-  transform: scale(1.1);
-}
-</style>

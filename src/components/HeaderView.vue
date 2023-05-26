@@ -14,7 +14,9 @@
           @click="toggleNavItem(index)"
         />
         <!-- Render the ellipse if the item is active -->
+        <div id="container-tick">
         <div id="tick" v-if="item.isActive"></div>
+        </div>
       </li>
     </ul>
 
@@ -89,10 +91,11 @@ export default {
   justify-content: space-between;
 }
 .navigation-bar {
-  width: 665px;
+  width: 673px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 .nav {
   background-color: #ffffff;
@@ -104,6 +107,10 @@ export default {
 }
 .nav:hover {
   cursor: pointer;
+}
+#container-tick {
+  width: 8px;
+  height: 8px;
 }
 #tick {
   width: 8px;
