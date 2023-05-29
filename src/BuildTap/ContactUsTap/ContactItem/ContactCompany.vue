@@ -2,18 +2,23 @@
   <div id="contact-company">
     <icon-company />
     <input
-      v-model="inputValue"
+      v-model="company"
       :placeholder="placeholderText"
       id="custom-input"
+      @blur="validateName"
     />
+  </div>
+  <div v-if="isInvalidFormat" id="error-message-company">
+    {{ isInvalidFormat }}
+    <!-- Hiển thị thông báo lỗi nếu định dạng tên không hợp lệ -->
   </div>
 </template>
 
 <script>
-import IconCompany from '@/Icon/IconCompany.vue';
+import IconCompany from "@/Icon/IconCompany.vue";
 export default {
   components: {
-    IconCompany
+    IconCompany,
   },
   props: {
     placeholderText: {
@@ -23,8 +28,19 @@ export default {
   },
   data() {
     return {
-      inputValue: "",
+      company: "",
+      isInvalidFormat: "",
     };
+  },
+  methods: {
+    validateName() {
+      if (!/^[A-Z\s]+$/.test(this.company)) {
+        this.isInvalidFormat =
+          "Tên công ty cơ quan cần viết hoa và không chứa ký tự đặc biệt !";
+      } else {
+        this.isInvalidFormat = "";
+      }
+    },
   },
 };
 </script>
@@ -33,7 +49,7 @@ export default {
 #contact-company {
   display: flex;
   align-items: center;
-  
+
   width: 527px;
   height: 56px;
   background: #f5f6f7;
@@ -54,5 +70,11 @@ export default {
   outline: none;
   border-color: transparent;
   width: 300px;
+}
+#error-message-company {
+  margin: 10px 0;
+  color: red;
+  font-weight: 600;
+  font-family: "mulish", sans-serif;
 }
 </style>

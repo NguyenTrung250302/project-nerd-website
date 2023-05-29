@@ -64,7 +64,7 @@ export default {
 }
 #contact-modal {
   width: 590px;
-  height: 330px;
+  height: 360px;
   box-shadow: 1px 32px 32px -20px #dedede;
   border-radius: 16px;
   padding: 40px 0;

@@ -2,10 +2,15 @@
   <div id="contact-name">
     <icon-user />
     <input
-      v-model="inputValue"
+      v-model="name"
       :placeholder="placeholderText"
       id="custom-input"
+      @blur="validateName"
     />
+  </div>
+  <div v-if="isInvalidFormat" id="error-message-name">
+    {{ isInvalidFormat }}
+    <!-- Hiển thị thông báo lỗi nếu định dạng tên không hợp lệ -->
   </div>
 </template>
 
@@ -13,7 +18,7 @@
 import IconUser from "@/Icon/IconUser.vue";
 export default {
   components: {
-    IconUser
+    IconUser,
   },
   props: {
     placeholderText: {
@@ -23,8 +28,19 @@ export default {
   },
   data() {
     return {
-      inputValue: "",
+      name: "",
+      isInvalidFormat: "",
     };
+  },
+  methods: {
+    validateName() {
+      if (!/^[A-Z\s]+$/.test(this.name)) {
+        this.isInvalidFormat =
+          "Tên của bạn phải viết hoa và không chứa các ký tự đặc biệt !"; // Nếu định dạng tên không hợp lệ, gán thông báo lỗi
+      } else {
+        this.isInvalidFormat = ""; // Nếu định dạng tên hợp lệ, xóa thông báo lỗi
+      }
+    },
   },
 };
 </script>
@@ -53,5 +69,11 @@ export default {
   outline: none;
   border-color: transparent;
   width: 300px;
+}
+#error-message-name {
+  margin: 10px 0;
+  color: red;
+  font-weight: 600;
+  font-family: "mulish", sans-serif;
 }
 </style>

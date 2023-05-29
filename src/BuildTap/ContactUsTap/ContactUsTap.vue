@@ -17,7 +17,7 @@
           <contact-choose-topic placeholderText="Choose Topic" />
           <contact-help placeholderContact="How can we help you ?" />
         </div>
-        <send-now-button id="btn-send-now" />
+        <send-now-button/>
       </div>
       <!-- right -->
       <div id="background-contact"></div>
@@ -82,9 +82,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-#btn-send-now {
-  margin-left: 30px;
 }
 #background-contact {
   width: 500px;

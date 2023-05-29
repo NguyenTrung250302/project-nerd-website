@@ -1,17 +1,22 @@
 <template>
-  <button @click="changeTapComingSoon" id="btn-send-now">Send Now</button>
+  <button @click="handleSubmit" id="btn-send-now">Send Now</button>
 </template>
 
 <script>
 export default {
-  components: {},
+  data() {
+    return {
+      isInvalidEmail: false,
+    };
+  },
   methods: {
-    changeTapComingSoon() {
-      this.$router.push("/comingSoon");
+    handleSubmit() {
+      
     },
   },
 };
 </script>
+
 
 <style scoped>
 #btn-send-now {
@@ -33,6 +38,7 @@ export default {
   transition: transform 0.3s ease;
   text-decoration: none;
   transition-timing-function: ease-in-out;
+  margin-left: 30px;
 }
 #btn-send-now:hover {
   cursor: pointer;

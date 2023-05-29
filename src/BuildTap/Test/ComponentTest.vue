@@ -14,7 +14,7 @@
           <contact-name placeholderText="Name" />
         </div>
         <!--component btn click -->
-        <send-now-button id="btn-send-now" />
+        <send-now-button/>
       </div>
     </div>
     <!--  -->
@@ -33,5 +33,6 @@ export default {
     SendNowButton,
     ContactName,
   },
+  
 };
 </script>

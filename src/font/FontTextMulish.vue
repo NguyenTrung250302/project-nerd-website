@@ -152,7 +152,7 @@ p {
   margin: 0;
   padding: 0;
   position: absolute;
-  width: 160px;
+  width: 155px;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
