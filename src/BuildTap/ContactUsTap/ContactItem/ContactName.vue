@@ -1,16 +1,18 @@
 <template>
-  <div id="contact-name">
-    <icon-user />
-    <input
-      v-model="name"
-      :placeholder="placeholderText"
-      id="custom-input"
-      @blur="validateName"
-    />
-  </div>
-  <div v-if="isInvalidFormat" id="error-message-name">
-    {{ isInvalidFormat }}
-    <!-- Hiển thị thông báo lỗi nếu định dạng tên không hợp lệ -->
+  <div>
+    <div id="contact-name">
+      <icon-user />
+      <input
+        v-model="name"
+        :placeholder="placeholderText"
+        id="custom-input"
+        @blur="validateName"
+      />
+    </div>
+    <div v-if="isInvalidFormat" id="error-message-name">
+      {{ isInvalidFormat }}
+      <!-- Hiển thị thông báo lỗi nếu định dạng tên không hợp lệ -->
+    </div>
   </div>
 </template>
 
@@ -36,7 +38,7 @@ export default {
     validateName() {
       if (!/^[A-Z\s]+$/.test(this.name)) {
         this.isInvalidFormat =
-          "Tên của bạn phải viết hoa và không chứa các ký tự đặc biệt !"; // Nếu định dạng tên không hợp lệ, gán thông báo lỗi
+          "*Tên của bạn phải viết hoa và không chứa các ký tự đặc biệt !"; // Nếu định dạng tên không hợp lệ, gán thông báo lỗi
       } else {
         this.isInvalidFormat = ""; // Nếu định dạng tên hợp lệ, xóa thông báo lỗi
       }
@@ -75,5 +77,6 @@ export default {
   color: red;
   font-weight: 600;
   font-family: "mulish", sans-serif;
+  font-size: 14px;
 }
 </style>

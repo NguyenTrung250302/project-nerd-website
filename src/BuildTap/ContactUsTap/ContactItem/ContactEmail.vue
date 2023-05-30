@@ -1,4 +1,5 @@
 <template>
+<div>
   <div id="contact-item">
     <icon-email />
     <!-- Sử dụng component IconEmail để hiển thị biểu tượng email -->
@@ -14,6 +15,7 @@
     {{ isInvalidFormat }}
     <!-- Hiển thị thông báo lỗi nếu định dạng email không hợp lệ -->
   </div>
+</div>
 </template>
 
 <script>
@@ -38,7 +40,7 @@ export default {
   methods: {
     validateEmail() {
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.email)) {
-        this.isInvalidFormat = "Vui lòng nhập vào email đúng định dạng !"; // Nếu định dạng email không hợp lệ, gán thông báo lỗi
+        this.isInvalidFormat = "*Vui lòng nhập vào email đúng định dạng !"; // Nếu định dạng email không hợp lệ, gán thông báo lỗi
       } else {
         this.isInvalidFormat = ""; // Nếu định dạng email hợp lệ, xóa thông báo lỗi
       }
@@ -82,5 +84,6 @@ p {
   color: red;
   font-weight: 600;
   font-family: "mulish", sans-serif;
+  font-size: 14px;
 }
 </style>

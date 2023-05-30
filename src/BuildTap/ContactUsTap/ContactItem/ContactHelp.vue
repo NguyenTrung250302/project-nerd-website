@@ -2,11 +2,12 @@
   <div id="contact-help">
     <icon-feedback />
     <div>
-    <input
-      v-model="inputValue"
-      :placeholder="placeholderContact"
-      id="custom-input-contact"
-    />
+      <textarea
+        v-model="help"
+        :placeholder="placeholderContact"
+        id="custom-input-contact"
+      >
+      </textarea>
     </div>
   </div>
 </template>
@@ -15,13 +16,16 @@
 import IconFeedback from "@/Icon/IconFeedback.vue";
 export default {
   components: {
-    IconFeedback
+    IconFeedback,
   },
   props: {
     placeholderContact: {
       type: String,
       requited: true,
     },
+  },
+  data() {
+    return {};
   },
 };
 </script>
@@ -47,7 +51,8 @@ export default {
   border: none;
   outline: none;
   border-color: transparent;
-  width: 350px;
+  width: 474px;
+  height: 160px;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }

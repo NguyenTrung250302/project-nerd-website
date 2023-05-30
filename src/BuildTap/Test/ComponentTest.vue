@@ -14,10 +14,14 @@
           <contact-name placeholderText="Name" />
         </div>
         <!--component btn click -->
-        <send-now-button/>
+        <send-now-button />
       </div>
     </div>
     <!--  -->
+    <div>
+      <textarea id="area" v-model="message" placeholder="haha"></textarea>
+      <button @click="sendMessage">Gửi</button>
+    </div>
   </div>
 </template>
 
@@ -33,6 +37,30 @@ export default {
     SendNowButton,
     ContactName,
   },
-  
+  data() {
+    return {
+      message: '', // Dữ liệu của textarea
+      sentMessage: '' // Thông tin đã gửi
+    };
+  },
+  methods: {
+    sendMessage() {
+      // Xử lý gửi thông tin ở đây
+      // Ví dụ: gửi thông tin lên server, lưu trữ vào cơ sở dữ liệu, vv.
+      // Trong ví dụ này, chúng ta chỉ cập nhật thuộc tính sentMessage với nội dung từ textarea
+      this.sentMessage = this.message;
+      this.message = ''; // Xóa nội dung của textarea sau khi gửi
+    }
+  }
 };
 </script>
+
+<style scoped>
+#area {
+  width: 300px;
+  height: 200px;
+  border: none;
+  outline: none;
+  background-color: cadetblue;
+}
+</style>
