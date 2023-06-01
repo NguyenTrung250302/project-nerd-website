@@ -1,19 +1,14 @@
 <template>
-  <button @click="handleSubmit" id="btn-send-now">Send Now</button>
+  <button @click="handleClick" id="btn-send-now">Send Now</button>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      isInvalidEmail: false,
-    };
-  },
   methods: {
-    handleSubmit() {
-      
-    },
-  },
+    handleClick() {
+      this.$emit('submit'); // Phát ra sự kiện 'submit' khi người dùng click vào nút
+    }
+  }
 };
 </script>
 

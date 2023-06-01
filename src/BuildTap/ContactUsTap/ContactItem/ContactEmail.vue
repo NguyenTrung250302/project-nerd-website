@@ -1,21 +1,18 @@
 <template>
-<div>
-  <div id="contact-item">
-    <icon-email />
-    <!-- Sử dụng component IconEmail để hiển thị biểu tượng email -->
-    <input
-      v-model="email"
-      :placeholder="placeholderText"
-      id="custom-input"
-      @blur="validateEmail"
-    />
-    <!-- Ô input để nhập email -->
+  <div>
+    <div id="contact-item">
+      <icon-email />
+      <input
+        v-model="email"
+        :placeholder="placeholderText"
+        id="custom-input"
+        @blur="validateEmail"
+      />
+    </div>
+    <div v-if="isInvalidFormat" id="error-message-email">
+      {{ isInvalidFormat }}
+    </div>
   </div>
-  <div v-if="isInvalidFormat" id="error-message-email">
-    {{ isInvalidFormat }}
-    <!-- Hiển thị thông báo lỗi nếu định dạng email không hợp lệ -->
-  </div>
-</div>
 </template>
 
 <script>
@@ -33,16 +30,19 @@ export default {
   },
   data() {
     return {
-      email: "", // Dữ liệu email được lưu trữ trong biến email
-      isInvalidFormat: "", // Biến này sẽ lưu trữ thông báo lỗi nếu định dạng email không hợp lệ
+      email: "",
+      isInvalidFormat: "",
     };
   },
   methods: {
     validateEmail() {
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.email)) {
-        this.isInvalidFormat = "*Vui lòng nhập vào email đúng định dạng !"; // Nếu định dạng email không hợp lệ, gán thông báo lỗi
+      this.isInvalidFormat = "";
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(this.email) || this.email === null) {
+        this.isInvalidFormat = "* Vui lòng nhập vào email đúng định dạng!";
+        this.$emit("emailValidity", false);
       } else {
-        this.isInvalidFormat = ""; // Nếu định dạng email hợp lệ, xóa thông báo lỗi
+        this.$emit("emailValidity", true);
       }
     },
   },

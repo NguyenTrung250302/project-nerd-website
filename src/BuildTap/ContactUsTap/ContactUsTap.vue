@@ -11,13 +11,15 @@
       <!-- left -->
       <div id="contact-modal">
         <div id="form-contact">
+          <!-- input -->
           <contact-email placeholderText="Email address" />
           <contact-name placeholderText="Name" />
           <contact-company placeholderText="Company name" />
           <contact-choose-topic placeholderText="Choose Topic" />
           <contact-help placeholderContact="How can we help you ?" />
         </div>
-        <send-now-button/>
+        <!-- btn -->
+        <send-now-button />
       </div>
       <!-- right -->
       <div id="background-contact"></div>
