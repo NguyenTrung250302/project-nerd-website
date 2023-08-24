@@ -1,16 +1,16 @@
 <template>
   <div class="container-featured">
     <div class="pinned-wrap">
-      <!-- row 1 -->
+
       <div class="row">
-        <!-- box 1 -->
+
         <div class="pinned-item img1">
-          <!-- item -->
+
           <div class="form-item-above">
             <pinned-item />
             <premium-item />
           </div>
-          <!-- content -->
+
           <div class="form-item-below">
             <form-text-1
               thanhTung="by Thanh Tung"
@@ -19,14 +19,14 @@
           </div>
         </div>
         <div class="pinned-item">
-          <!-- box 2 -->
+
           <div class="pinned-item-small img2">
-            <!-- item -->
+
             <div class="form-item-above">
               <pinned-item />
               <premium-item />
             </div>
-            <!-- content -->
+
             <div class="form-item-below">
               <form-text-2
                 nameDesigner="by Thanh Tung"
@@ -34,14 +34,14 @@
               />
             </div>
           </div>
-          <!-- box 3 -->
+
           <div class="pinned-item-small img3" @click="changeClick">
-            <!-- item -->
+
             <div class="form-item-above">
               <pinned-item />
               <premium-item />
             </div>
-            <!-- content -->
+
             <div class="form-item-below">
               <form-text-2
                 nameDesigner="by Thanh Tung"
@@ -92,7 +92,7 @@
             <pinned-item />
             <premium-item />
           </div>
-          <!-- content -->
+
           <div class="form-item-below">
             <form-text-2
               nameDesigner="by yy.#0101"
@@ -100,14 +100,14 @@
             />
           </div>
         </div>
-        <!-- box 7 -->
+
         <div class="pinned-item-small img7">
-          <!-- item -->
+
           <div class="form-item-above">
             <pinned-item />
             <premium-item />
           </div>
-          <!-- content -->
+
           <div class="form-item-below">
             <form-text-2
               nameDesigner="by Thanh Tung"
@@ -115,14 +115,14 @@
             />
           </div>
         </div>
-        <!-- box 8 -->
+
         <div class="pinned-item-small img8">
-          <!-- item -->
+
           <div class="form-item-above">
             <pinned-item />
             <premium-item />
           </div>
-          <!-- content -->
+
           <div class="form-item-below">
             <form-text-2
               nameDesigner="by Tran Thuan"
