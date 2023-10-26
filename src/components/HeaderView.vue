@@ -1,6 +1,6 @@
 <template>
   <div class="container-header">
-    <!-- logo -->
+    <!-- logo header -->
     <logo-header />
 
     <!-- navigation bar -->
